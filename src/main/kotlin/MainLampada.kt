@@ -1,0 +1,36 @@
+import models.Lampara
+
+fun main() {
+    val lampara1 = Lampara(false,"Menjador", 0,"blanco")
+    val lampara2 = Lampara(false,"Cuina",0,"blanco")
+
+    lampara1.encendre()
+    println("Lámpara ${lampara1.identificador}: ${lampara1}")
+    lampara1.canviarColor("rojo")
+    println("Lámpara ${lampara1.identificador}: ${lampara1}")
+    lampara1.canviarColor("verde")
+    println("Lámpara ${lampara1.identificador}: ${lampara1}")
+    lampara1.canviarColor("azul")
+    println("Lámpara ${lampara1.identificador}: ${lampara1}")
+    lampara1.canviarIntensitat(5)
+    println("Lámpara ${lampara1.identificador}: ${lampara1}")
+
+    lampara2.encendre()
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarColor("amarillo")
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarColor("morado")
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarIntensitat(5)
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.apagar()
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarColor("blanco")
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.encendre()
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarColor("verde")
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+    lampara2.canviarIntensitat(5)
+    println("Lámpara ${lampara2.identificador}: ${lampara2}")
+}
